@@ -561,18 +561,18 @@ html.dark .card-front.g-tint-das{background:linear-gradient(135deg,rgba(74,173,1
 <div class="kap-wrap">
   <div class="kap-scroll">
     <button class="kap-btn active" id="kap-0" onclick="setKapitel(0)">📚 All</button>
-    <button class="kap-btn" id="kap-1" onclick="setKapitel(1)">Kap.1 · Guten Tag!</button>
-    <button class="kap-btn" id="kap-2" onclick="setKapitel(2)">Kap.2 · Freunde</button>
-    <button class="kap-btn" id="kap-3" onclick="setKapitel(3)">Kap.3 · Hamburg</button>
-    <button class="kap-btn" id="kap-4" onclick="setKapitel(4)">Kap.4 · Appetit!</button>
-    <button class="kap-btn" id="kap-5" onclick="setKapitel(5)">Kap.5 · Familie</button>
-    <button class="kap-btn" id="kap-6" onclick="setKapitel(6)">Kap.6 · Freunde</button>
-    <button class="kap-btn" id="kap-7" onclick="setKapitel(7)">Kap.7 · Arbeit</button>
-    <button class="kap-btn" id="kap-8" onclick="setKapitel(8)">Kap.8 · Gesund</button>
-    <button class="kap-btn" id="kap-9" onclick="setKapitel(9)">Kap.9 · Wohnung</button>
-    <button class="kap-btn" id="kap-10" onclick="setKapitel(10)">Kap.10 · Studium</button>
-    <button class="kap-btn" id="kap-11" onclick="setKapitel(11)">Kap.11 · Jacke!</button>
-    <button class="kap-btn" id="kap-12" onclick="setKapitel(12)">Kap.12 · Urlaub!</button>
+    <button class="kap-btn" id="kap-1" onclick="setKapitel(1)">Kap.1 · Berufe</button>
+    <button class="kap-btn" id="kap-2" onclick="setKapitel(2)">Kap.2 · Schule</button>
+    <button class="kap-btn" id="kap-3" onclick="setKapitel(3)">Kap.3 · Digital</button>
+    <button class="kap-btn" id="kap-4" onclick="setKapitel(4)">Kap.4 · Ereignisse</button>
+    <button class="kap-btn" id="kap-5" onclick="setKapitel(5)">Kap.5 · Behörden</button>
+    <button class="kap-btn" id="kap-6" onclick="setKapitel(6)">Kap.6 · Reisen</button>
+    <button class="kap-btn" id="kap-7" onclick="setKapitel(7)">Kap.7 · Pläne</button>
+    <button class="kap-btn" id="kap-8" onclick="setKapitel(8)">Kap.8 · Medien</button>
+    <button class="kap-btn" id="kap-9" onclick="setKapitel(9)">Kap.9 · Sport</button>
+    <button class="kap-btn" id="kap-10" onclick="setKapitel(10)">Kap.10 · Urlaub</button>
+    <button class="kap-btn" id="kap-11" onclick="setKapitel(11)">Kap.11 · Feste</button>
+    <button class="kap-btn" id="kap-12" onclick="setKapitel(12)">Kap.12 · Kultur</button>
   </div>
   <div class="chip-row" id="wt-chips">
     <button class="chip a-all" id="wt-all"       onclick="setWordType('all')">All</button>
@@ -991,11 +991,11 @@ html.dark .card-front.g-tint-das{background:linear-gradient(135deg,rgba(74,173,1
 // GLOSSAR DATA — Netzwerk neu A2, Kapitel 1–12
 // ============================================================
 const KAPITEL_NAMES = {
-  0:'All Chapters',1:'Kap.1 · Leute und Berufe',2:'Kap.2 · Früher und heute',
-  3:'Kap.3 · Digital und Medien',4:'Kap.4 · Neue Anfänge',5:'Kap.5 · Behörden und Ämter',
-  6:'Kap.6 · Feste und Unterwegs',7:'Kap.7 · Kultur und Pläne',8:'Kap.8 · Sprachen und Kommunikation',
-  9:'Kap.9 · Sport und Fitness',10:'Kap.10 · Wohnen und Natur',
-  11:'Kap.11 · Unterwegs und Reisen',12:'Kap.12 · Gesellschaft und Kultur'
+  0:'All Chapters',1:'Kap.1 · Berufe & Sprachen',2:'Kap.2 · Schule & Karriere',
+  3:'Kap.3 · Digital & Medien',4:'Kap.4 · Lebensereignisse',5:'Kap.5 · Stadt & Behörden',
+  6:'Kap.6 · Reisen & Ausflüge',7:'Kap.7 · Pläne & Konzerte',8:'Kap.8 · Medien & Kultur',
+  9:'Kap.9 · Sport & Freizeit',10:'Kap.10 · Urlaub & Natur',
+  11:'Kap.11 · Feste & Zeit',12:'Kap.12 · Gesellschaft & Lesen'
 };
 
 const GLOSSAR = {
@@ -1081,7 +1081,16 @@ const GLOSSAR = {
 {german:"scharf, schärfer, am schärfsten",english:"spicy",wordType:"adjective",id:79},
 {german:"folgen",english:"to follow",wordType:"verb",id:80},
 {german:"ganz",english:"hier: all the way",wordType:"other",id:81},
-{german:"konjugiert",english:"conjugated",wordType:"adjective",id:82}
+{german:"konjugiert",english:"conjugated",wordType:"adjective",id:82},
+{german:"Meine Mutter ist Italienerin, mein Vater ist Österreicher. Ich habe also zwei Muttersprachen.",english:"My mother is Italian and my father is Austrian. So I have two mother tongues.",wordType:"sentence",id:1483},
+{german:"Meine Eltern leben auf dem Land.",english:"My parents live in the countryside.",wordType:"sentence",id:1484},
+{german:"Er liegt am Wochenende gern auf dem Sofa.",english:"He likes to lie on the sofa at the weekend.",wordType:"sentence",id:1485},
+{german:"Vielleicht studiere ich bald, mal sehen.",english:"Maybe I'll be studying soon, we'll see.",wordType:"sentence",id:1486},
+{german:"Sie hat ihre Ausbildung abgeschlossen.",english:"She finished her training.",wordType:"sentence",id:1487},
+{german:"Kann ich was mitbringen?",english:"Can I bring something?",wordType:"sentence",id:1488},
+{german:"Ein Kellner führt Sie im Restaurant zum Platz.",english:"At the restaurant, a waiter will lead you to your place.",wordType:"sentence",id:1489},
+{german:"Die Zitrone schmeckt sauer.",english:"The lemon tastes sour.",wordType:"sentence",id:1490},
+{german:"Das konjugierte Verb steht ganz am Ende.",english:"The conjugated verb is all the way at the end.",wordType:"sentence",id:1491}
 ],
 2:[
 {german:"die Schulzeit (Sg.)",english:"school days",wordType:"noun",id:83},
@@ -1215,7 +1224,20 @@ const GLOSSAR = {
 {german:"das Klassenzimmer, -",english:"classroom",wordType:"noun",id:211},
 {german:"der Stundenplan, \"-e",english:"schedule",wordType:"noun",id:212},
 {german:"Traum-",english:"dream",wordType:"other",id:213},
-{german:"die Unterrichtszeit, -en",english:"class time",wordType:"noun",id:214}
+{german:"die Unterrichtszeit, -en",english:"class time",wordType:"noun",id:214},
+{german:"Sie hat Grafik an der Universität studiert.",english:"She studied graphics at university.",wordType:"sentence",id:1492},
+{german:"Die Lehrerin steht vor der Klasse.",english:"The teacher is standing in front of the class.",wordType:"sentence",id:1493},
+{german:"Mit vielen Freunden habe ich heute noch Kontakt.",english:"I'm still in contact with many of my friends today.",wordType:"sentence",id:1494},
+{german:"Meine Freunde und ich haben viel Kontakt.",english:"My friends and I have a lot of contact.",wordType:"sentence",id:1495},
+{german:"Alle paar Wochen habe ich frei.",english:"Every couple of weeks I have time off.",wordType:"sentence",id:1496},
+{german:"Ich musste nie Hausaufgaben machen. - Ehrlich?",english:"I never had to do homework. - Really?",wordType:"sentence",id:1497},
+{german:"Das war bei mir auch so.",english:"It was just like that for me.",wordType:"sentence",id:1498},
+{german:"Sag deine Meinung.",english:"State your opinion.",wordType:"sentence",id:1499},
+{german:"Ich finde das nicht schlecht.",english:"I don't find that bad.",wordType:"sentence",id:1500},
+{german:"Das sehe ich anders.",english:"I see that differently.",wordType:"sentence",id:1501},
+{german:"Ich möchte keine Zeit verlieren.",english:"I don't want to lose any time.",wordType:"sentence",id:1502},
+{german:"Sehen Sie die Grafik an.",english:"Look at the diagram.",wordType:"sentence",id:1503},
+{german:"Mein Lieblingsfach in der Schule war Geschichte.",english:"My favourite subject in school was history.",wordType:"sentence",id:1504}
 ],
 3:[
 {german:"ausprobieren",english:"to try",wordType:"verb",id:215},
@@ -1345,7 +1367,25 @@ const GLOSSAR = {
 {german:"kommentieren",english:"to comment on sth",wordType:"verb",id:339},
 {german:"zuletzt",english:"lastly",wordType:"other",id:340},
 {german:"der Trailer, -",english:"trailer",wordType:"noun",id:341},
-{german:"der Vergleich, -e",english:"comparison",wordType:"noun",id:342}
+{german:"der Vergleich, -e",english:"comparison",wordType:"noun",id:342},
+{german:"Ich checke meine E-Mails jeden Tag.",english:"I check my emails every day.",wordType:"sentence",id:1505},
+{german:"Sie hört gern Radio.",english:"She likes to listen to the radio.",wordType:"sentence",id:1506},
+{german:"Die Maus ist neben der Tastatur.",english:"The mouse is next to the keyboard.",wordType:"sentence",id:1507},
+{german:"Ein Laptop kostet mehr als ein Tablet.",english:"A laptop costs more than a tablet.",wordType:"sentence",id:1508},
+{german:"Das Tablet ist viel leichter als ein Laptop.",english:"The tablet is a lot lighter than a laptop.",wordType:"sentence",id:1509},
+{german:"Der Laptop ist nicht so leicht wie das Tablet.",english:"The laptop is not as light as the tablet.",wordType:"sentence",id:1510},
+{german:"Ich bin gerne draußen und so finde ich Ideen für Projekte.",english:"I like to be outside and through that I can get ideas for projects.",wordType:"sentence",id:1511},
+{german:"Ich habe ganz viele Likes bekommen.",english:"I got quite a lot of likes.",wordType:"sentence",id:1512},
+{german:"Was soll das?",english:"What is the point of that?",wordType:"sentence",id:1513},
+{german:"Sie sind super aktiv.",english:"They are really active.",wordType:"sentence",id:1514},
+{german:"Worum geht es im Text?",english:"What is the text about?",wordType:"sentence",id:1515},
+{german:"Ich möchte mit meinen Freunden in Kontakt bleiben.",english:"I want to stay in contact with my friends.",wordType:"sentence",id:1516},
+{german:"Ich meine, dass ...",english:"I think that ...",wordType:"sentence",id:1517},
+{german:"Kennst du den Film 'Der Club der roten Bänder'?",english:"Do you know the film 'Club of the red ribbons'?",wordType:"sentence",id:1518},
+{german:"Der Film spielt in Berlin und ...",english:"The film is set in Berlin and ...",wordType:"sentence",id:1519},
+{german:"Die Handlung im Film ist nicht logisch.",english:"The plot of the film is not logical.",wordType:"sentence",id:1520},
+{german:"Die Schauspieler waren einfach toll!",english:"The actors were simply great!",wordType:"sentence",id:1521},
+{german:"in Kontakt bleiben",english:"to stay in contact",wordType:"sentence",id:1522}
 ],
 4:[
 {german:"aufgeregt",english:"excited",wordType:"adjective",id:343},
@@ -1461,7 +1501,17 @@ const GLOSSAR = {
 {german:"unsympathisch",english:"disagreeable",wordType:"adjective",id:453},
 {german:"unwichtig",english:"unimportant",wordType:"adjective",id:454},
 {german:"verspätet",english:"late",wordType:"adjective",id:455},
-{german:"austauschen",english:"to exchange",wordType:"verb",id:456}
+{german:"austauschen",english:"to exchange",wordType:"verb",id:456},
+{german:"Erster Platz! Ich habe gewonnen.",english:"First place! I have won.",wordType:"sentence",id:1523},
+{german:"Das Brautpaar trägt Ringe am Finger.",english:"The newlyweds wear rings on their fingers.",wordType:"sentence",id:1524},
+{german:"Wenn meine Freundin wegfährt, dann bin ich traurig.",english:"When my friend leaves then I'm sad.",wordType:"sentence",id:1525},
+{german:"Heute habe ich schlechte Laune.",english:"I'm in a bad mood today.",wordType:"sentence",id:1526},
+{german:"Sie hat eine Karte zum Geburtstag bekommen.",english:"She got a card for her birthday.",wordType:"sentence",id:1527},
+{german:"Wie schön, ihr heiratet!",english:"How lovely, you're getting married!",wordType:"sentence",id:1528},
+{german:"Was steht auf der Karte?",english:"What is on the card?",wordType:"sentence",id:1529},
+{german:"Kommst du heute? - Keine Ahnung.",english:"Are you coming today? - No idea.",wordType:"sentence",id:1530},
+{german:"Simon kommt zu spät. Ich bin echt sauer!",english:"Simon is late. I'm really angry!",wordType:"sentence",id:1531},
+{german:"Sie bringen etwas zu essen mit.",english:"They are bringing something to eat.",wordType:"sentence",id:1532}
 ],
 5:[
 {german:"das Amt, \"-er",english:"department",wordType:"noun",id:457},
@@ -1572,7 +1622,14 @@ const GLOSSAR = {
 {german:"die Ruhe (Sg.)",english:"quiet",wordType:"noun",id:562},
 {german:"der Tourist, -en",english:"tourist (m)",wordType:"noun",id:563},
 {german:"die Touristin, -nen",english:"tourist (f)",wordType:"noun",id:564},
-{german:"die Verwaltung (Sg.)",english:"administration",wordType:"noun",id:565}
+{german:"die Verwaltung (Sg.)",english:"administration",wordType:"noun",id:565},
+{german:"Stellt euch vor: Ich habe ein Vorstellungsgespräch.",english:"Imagine this: I have a job interview.",wordType:"sentence",id:1533},
+{german:"Drückt mir die Daumen!",english:"Cross your fingers for me!",wordType:"sentence",id:1534},
+{german:"Sie hat einen Job neben dem Studium.",english:"She has a job besides her studies.",wordType:"sentence",id:1535},
+{german:"Er meldet einen Diebstahl bei der Polizei.",english:"He's reporting a theft at the police station.",wordType:"sentence",id:1536},
+{german:"Mit einem Pass dürfen Sie über die Grenze.",english:"You can go across the border with a passport.",wordType:"sentence",id:1537},
+{german:"Kann ich dich um einen Gefallen bitten?",english:"Can I ask you for a favour?",wordType:"sentence",id:1538},
+{german:"Nadja geht in Wien am Ring spazieren.",english:"Nadja is going for a walk along the ring in Vienna.",wordType:"sentence",id:1539}
 ],
 6:[
 {german:"der Ärger (Sg.)",english:"anger",wordType:"noun",id:566},
@@ -1728,7 +1785,21 @@ const GLOSSAR = {
 {german:"zunehmen, er nimmt zu, hat zugenommen",english:"to increase",wordType:"verb",id:716},
 {german:"die Zusammenarbeit (Sg.)",english:"cooperation",wordType:"noun",id:717},
 {german:"das Schlüsselwort, \"-er",english:"keyword",wordType:"noun",id:718},
-{german:"die Verwendung (Sg.)",english:"usage",wordType:"noun",id:719}
+{german:"die Verwendung (Sg.)",english:"usage",wordType:"noun",id:719},
+{german:"Ich kaufe ein Ticket am Schalter.",english:"I buy a ticket at the counter.",wordType:"sentence",id:1540},
+{german:"Möchten Sie ein Ticket hin und zurück? – Nein, einfach, bitte.",english:"Would you like a ticket there and back? - No, one-way, please.",wordType:"sentence",id:1541},
+{german:"Wo möchten Sie sitzen? – Am Gang, bitte.",english:"Where would you like to sit? - In an aisle seat, please.",wordType:"sentence",id:1542},
+{german:"Möchten Sie ein Ticket für die zweite Klasse?",english:"Would you like a ticket for the second class?",wordType:"sentence",id:1543},
+{german:"Namika spielt mit ihrer Band ein Konzert in Wiesbaden.",english:"Namika is giving a concert with her band in Wiesbaden.",wordType:"sentence",id:1544},
+{german:"Das Theaterstück kommt auf die Bühne.",english:"The play is coming to stage.",wordType:"sentence",id:1545},
+{german:"Wofür entscheiden Sie sich?",english:"What does she choose?",wordType:"sentence",id:1546},
+{german:"Sie ist selbstständig und hat keinen Chef mehr.",english:"She is independent and no longer has a boss.",wordType:"sentence",id:1547},
+{german:"Sie hat die Chance genutzt.",english:"She took the chance.",wordType:"sentence",id:1548},
+{german:"Mach einen Schritt nach vorne.",english:"Take a step forward.",wordType:"sentence",id:1549},
+{german:"Hast du ein Blatt Papier für mich?",english:"Do you have a sheet of paper for me?",wordType:"sentence",id:1550},
+{german:"Frau Mankel ist leider außer Haus.",english:"Ms Mankel is out of office.",wordType:"sentence",id:1551},
+{german:"Rufen Sie morgen noch mal an. – Ja, in Ordnung.",english:"Call again tomorrow. - Yes, all right.",wordType:"sentence",id:1552},
+{german:"Oliver hat in der Firma kein festes Büro.",english:"Oliver doesn't have a fixed office at the firm.",wordType:"sentence",id:1553}
 ],
 7:[
 {german:"der Konzertsaal, -säle",english:"concert hall",wordType:"noun",id:720},
@@ -1863,7 +1934,19 @@ const GLOSSAR = {
 {german:"vorn, vorne",english:"at the front",wordType:"other",id:849},
 {german:"klatschen",english:"to clap",wordType:"verb",id:850},
 {german:"überlegen (sich)",english:"hier: to invent",wordType:"verb",id:851},
-{german:"erfragen",english:"to ask for sth",wordType:"verb",id:852}
+{german:"erfragen",english:"to ask for sth",wordType:"verb",id:852},
+{german:"Du bist ganz schön schnell!",english:"You're pretty fast!",wordType:"sentence",id:1554},
+{german:"Lukas muss an der Ampel halten.",english:"Lukas needs to stop at the traffic light.",wordType:"sentence",id:1555},
+{german:"Mensch, wann geht es weiter?",english:"Jeez, when is it going to continue?",wordType:"sentence",id:1556},
+{german:"Ich möchte gern wissen, ob ich das Auto überall abstellen kann.",english:"I would like to know if I can park the car anywhere.",wordType:"sentence",id:1557},
+{german:"Geh am Kaufhaus vorbei.",english:"Walk past the department store.",wordType:"sentence",id:1558},
+{german:"Geh immer geradeaus.",english:"Keep on walking straight forward.",wordType:"sentence",id:1559},
+{german:"Ich lese einen Artikel in der Zeitung.",english:"I'm reading an article in the newspaper.",wordType:"sentence",id:1560},
+{german:"Es geht auch anders.",english:"There is another way.",wordType:"sentence",id:1561},
+{german:"Untersuchungen zeigen, dass ...",english:"Surveys show that...",wordType:"sentence",id:1562},
+{german:"Ich bin gegen Autos im Stadtzentrum.",english:"I am against cars in the city centre.",wordType:"sentence",id:1563},
+{german:"Ich bin der Meinung, dass ...",english:"I am of the opinion that...",wordType:"sentence",id:1564},
+{german:"Wie lange brauchst du für den Weg zur Arbeit?",english:"How long do you need to get to work?",wordType:"sentence",id:1565}
 ],
 8:[
 {german:"chinesisch",english:"Chinese",wordType:"adjective",id:853},
@@ -2034,7 +2117,18 @@ const GLOSSAR = {
 {german:"der Inhalt, -e",english:"content",wordType:"noun",id:1018},
 {german:"vortragen, er trägt vor, hat vorgetragen",english:"to present",wordType:"verb",id:1019},
 {german:"der Zuhörer, -",english:"hier: member of the audience (m)",wordType:"noun",id:1020},
-{german:"die Zuhörerin, -nen",english:"hier: member of the audience (f)",wordType:"noun",id:1021}
+{german:"die Zuhörerin, -nen",english:"hier: member of the audience (f)",wordType:"noun",id:1021},
+{german:"Er bearbeitet Fotos am Computer.",english:"He is editing pictures on the computer.",wordType:"sentence",id:1566},
+{german:"Wie funktioniert das? Ich check's nicht!",english:"How does that work? I don't get it!",wordType:"sentence",id:1567},
+{german:"Ein Paket? Was machst du damit?",english:"A parcel? What are you going to do with that?",wordType:"sentence",id:1568},
+{german:"Lass freie Zeiten in deinem Lernplan.",english:"Leave some free time in your revision timetable.",wordType:"sentence",id:1569},
+{german:"Komm direkt zu uns!",english:"Come to us directly!",wordType:"sentence",id:1570},
+{german:"Mein Chef ist sehr erfahren.",english:"My boss is very experienced.",wordType:"sentence",id:1571},
+{german:"Die Firma hat mich für das Projekt angestellt.",english:"The firm hired me for the project.",wordType:"sentence",id:1572},
+{german:"Ich überlege, wie es dir wohl geht.",english:"I'm thinking about how you might be doing.",wordType:"sentence",id:1573},
+{german:"Morgen muss ich eine Präsentation halten.",english:"I need to give a presentation tomorrow.",wordType:"sentence",id:1574},
+{german:"Nehmen Sie sich mit dem Handy auf.",english:"Record yourself with the mobile phone.",wordType:"sentence",id:1575},
+{german:"Sprechen Sie flüssig Deutsch?",english:"Do you speak German fluently?",wordType:"sentence",id:1576}
 ],
 9:[
 {german:"der Fußballschuh, -e",english:"football boot",wordType:"noun",id:1022},
@@ -2154,7 +2248,23 @@ const GLOSSAR = {
 {german:"die Einwohnerin, -nen",english:"inhabitant (f)",wordType:"noun",id:1136},
 {german:"das Kitesurfen (Sg.)",english:"kitesurfing",wordType:"noun",id:1137},
 {german:"die Surfschule, -n",english:"surf school",wordType:"noun",id:1138},
-{german:"über",english:"long (the whole year long)",wordType:"other",id:1139}
+{german:"über",english:"long (the whole year long)",wordType:"other",id:1139},
+{german:"Das Spiel war mega schlecht!",english:"The game was really bad!",wordType:"sentence",id:1577},
+{german:"Das nächste Mal klappt es bestimmt.",english:"The next time it will definitely work.",wordType:"sentence",id:1578},
+{german:"Ich finde die Mannschaft einfach mega!",english:"I think the team is simply great!",wordType:"sentence",id:1579},
+{german:"Wahnsinn, ist das toll hier!",english:"Man, it's so great here!",wordType:"sentence",id:1580},
+{german:"Meine Lieblingsband gibt ein Konzert.",english:"My favourite band is giving a concert.",wordType:"sentence",id:1581},
+{german:"Der Verein hat ein Spiel verloren.",english:"The club lost a game.",wordType:"sentence",id:1582},
+{german:"Sie haben Ihr Handy verloren.",english:"You have lost your mobile phone.",wordType:"sentence",id:1583},
+{german:"Es regnet heute stark.",english:"It's raining hard today.",wordType:"sentence",id:1584},
+{german:"Auf zum Sport!",english:"Let's do some sport!",wordType:"sentence",id:1585},
+{german:"Ich weiß nicht, ob ich für das Joggen genug Kondition habe.",english:"I don't know if I have enough stamina for jogging.",wordType:"sentence",id:1586},
+{german:"Treffen wir uns um 17 Uhr? – Einverstanden.",english:"Shall we meet at 5 pm? - Agreed.",wordType:"sentence",id:1587},
+{german:"Kino am Montag? Das passt mir gut.",english:"Cinema on Monday? That fits well for me.",wordType:"sentence",id:1588},
+{german:"Zum Wandern brauchen Sie feste Schuhe.",english:"You need sturdy shoes for hiking.",wordType:"sentence",id:1589},
+{german:"Das Band geht von der Ostsee bis Bayern.",english:"The ribbon stretches from the Baltic Sea to Bavaria.",wordType:"sentence",id:1590},
+{german:"Das Grüne Band ist ein Streifen Land.",english:"The green ribbon is a strip of land.",wordType:"sentence",id:1591},
+{german:"In der Höhle liegt die Temperatur fast immer unter null Grad.",english:"The temperature in the cave is almost always below zero degrees.",wordType:"sentence",id:1592}
 ],
 10:[
 {german:"der Bauernhof, \"-e",english:"farm",wordType:"noun",id:1140},
@@ -2283,7 +2393,16 @@ const GLOSSAR = {
 {german:"verbessern",english:"to improve",wordType:"verb",id:1263},
 {german:"der Verbesserungsvorschlag, \"-e",english:"improvement suggestions",wordType:"noun",id:1264},
 {german:"mehrmalig",english:"repeated",wordType:"adjective",id:1265},
-{german:"die Vergangenheit (Sg.)",english:"past",wordType:"noun",id:1266}
+{german:"die Vergangenheit (Sg.)",english:"past",wordType:"noun",id:1266},
+{german:"Das Leben in der Wagenburg ist sehr einfach.",english:"Life at the wagon fort is very simple.",wordType:"sentence",id:1593},
+{german:"Verzeihung, wo finde ich den Bahnhof?",english:"Excuse me, where can I find the station?",wordType:"sentence",id:1594},
+{german:"Entschuldigung, dieser Fehler kommt nicht mehr vor.",english:"Sorry, this mistake won't happen again.",wordType:"sentence",id:1595},
+{german:"Ein Poster hängt am Gartenhaus.",english:"A poster is attached to the summer house.",wordType:"sentence",id:1596},
+{german:"Sie hängen die Lampions in den Baum.",english:"They're hanging the paper lanterns in the tree.",wordType:"sentence",id:1597},
+{german:"Das Zimmer ist voll möbliert.",english:"The room is completely furnished.",wordType:"sentence",id:1598},
+{german:"Als ich 14 Jahre alt war, ...",english:"When I was 14 years old, ...",wordType:"sentence",id:1599},
+{german:"Schick das Zeugnis per Mail.",english:"Send the certificate via email.",wordType:"sentence",id:1600},
+{german:"Eine Maus als Haustier? Das ist nichts für mich.",english:"A mouse as a pet? That's not for me.",wordType:"sentence",id:1601}
 ],
 11:[
 {german:"verbringen (mit + D.), er verbringt, hat verbracht",english:"hier: to spend",wordType:"verb",id:1267},
@@ -2368,7 +2487,14 @@ const GLOSSAR = {
 {german:"die Weile (Sg.)",english:"while",wordType:"noun",id:1346},
 {german:"effektiv",english:"effective",wordType:"adjective",id:1347},
 {german:"die Erklärung, -en",english:"explanation",wordType:"noun",id:1348},
-{german:"äußern",english:"to express",wordType:"verb",id:1349}
+{german:"äußern",english:"to express",wordType:"verb",id:1349},
+{german:"Ich würde gern öfter verreisen.",english:"I would like to go away more often.",wordType:"sentence",id:1602},
+{german:"An deiner Stelle würde ich ...",english:"In your stead I would ...",wordType:"sentence",id:1603},
+{german:"Bauernhof zu verkaufen!",english:"Farm for sale!",wordType:"sentence",id:1604},
+{german:"Kannst du ein paar Tomaten besorgen?",english:"Could you get a few tomatoes?",wordType:"sentence",id:1605},
+{german:"Ich gebe dir einen Rat: ...",english:"I'll give you some advice: ...",wordType:"sentence",id:1606},
+{german:"Das Kochen dauert eine Weile.",english:"Cooking takes a while.",wordType:"sentence",id:1607},
+{german:"Alles bestens.",english:"Everything's great.",wordType:"sentence",id:1608}
 ],
 12:[
 {german:"der König, -e",english:"king",wordType:"noun",id:1350},
@@ -2503,7 +2629,13 @@ const GLOSSAR = {
 {german:"dunkel-",english:"dark",wordType:"other",id:1479},
 {german:"hell-",english:"light",wordType:"other",id:1480},
 {german:"der Hintergrund, \"-e",english:"background",wordType:"noun",id:1481},
-{german:"anschließend",english:"subsequent",wordType:"adjective",id:1482}
+{german:"anschließend",english:"subsequent",wordType:"adjective",id:1482},
+{german:"Ich höre gerne Rock im Radio.",english:"I like to listen to rock on the radio.",wordType:"sentence",id:1609},
+{german:"Der letzte Schritt beim Online-Kauf ist die Bezahlung.",english:"The last step when online shopping is payment.",wordType:"sentence",id:1610},
+{german:"Die Farbe Rot steht für die Liebe.",english:"The colour red stands for love.",wordType:"sentence",id:1611},
+{german:"Ich bin heute gut/schlecht gelaunt.",english:"Today I'm in a good / bad mood.",wordType:"sentence",id:1612},
+{german:"An den Bäumen hängen Blätter.",english:"There are leaves on the tree.",wordType:"sentence",id:1613},
+{german:"Nennen Sie die passende Stelle im Text.",english:"Name the correct passage of the text.",wordType:"sentence",id:1614}
 ]
 };
 
@@ -3607,7 +3739,7 @@ function _fetchMnem(v){
   if(key)headers['x-api-key']=key;
   if(key)headers['anthropic-version']='2023-06-01';
   if(key)headers['anthropic-dangerous-direct-browser-access']='true';
-  const body=JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:120,messages:[{role:'user',content:`Give a single short memory hook (1-2 sentences max) for the German A2 word "${v.german}" (${v.english}). Focus on a vivid image or sound association. No intro, just the hook.`}]});
+  const body=JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:120,messages:[{role:'user',content:`Give a single short memory hook (1-2 sentences max) for the German A1 word "${v.german}" (${v.english}). Focus on a vivid image or sound association. No intro, just the hook.`}]});
   fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers,body})
   .then(r=>{
     if(r.status===401||r.status===403){
@@ -3675,7 +3807,7 @@ function regenMnem(){
   if(key)headers['anthropic-dangerous-direct-browser-access']='true';
   fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers,body:JSON.stringify({
     model:'claude-sonnet-4-20250514',max_tokens:120,
-    messages:[{role:'user',content:`Give a different creative memory hook (1-2 sentences) for German A2 word "${v.german}" (${v.english}). Make it vivid and memorable. No intro, just the hook.`}]
+    messages:[{role:'user',content:`Give a different creative memory hook (1-2 sentences) for German A1 word "${v.german}" (${v.english}). Make it vivid and memorable. No intro, just the hook.`}]
   })})
   .then(r=>{
     if(r.status===401||r.status===403){if(tEl)tEl.textContent='';if(row){row.style.display='block';const inp=document.getElementById('mnem-apikey-input');if(inp&&key)inp.value=key;}return null;}
@@ -3855,7 +3987,7 @@ function _dlFile(name,content,mime){
   // Service Worker for offline caching
   if('serviceWorker' in navigator){
     const swCode=`
-const CACHE='a2-glossar-v1';
+const CACHE='a1-glossar-v1';
 const PRECACHE=['/'];
 self.addEventListener('install',e=>e.waitUntil(
   caches.open(CACHE).then(c=>c.addAll(PRECACHE)).then(()=>self.skipWaiting())
@@ -4414,7 +4546,7 @@ function _initFirebase(){
     if(!firebase.apps.length)firebase.initializeApp(cfg);
     _fbDb=firebase.database();
     const safeKey=ukey.replace(/[.#$\[\]\/]/g,'_');
-    _fbRef=_fbDb.ref('a2glossar/'+safeKey+'/progress');
+    _fbRef=_fbDb.ref('a1glossar/'+safeKey+'/progress');
     _setSyncDot('syncing','connecting...');
     // Test connection first — only set _fbReady on success
     _fbRef.once('value').then(snap=>{
